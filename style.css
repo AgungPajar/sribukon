@@ -143,7 +143,7 @@ section {
   border-radius: 20px;
 }
 .client-section .problem h2 {
-  font-size: 4.5rem;
+  font-size: 40px;
   color: var(--main-color);
   margin-bottom: 20px;
   font-weight: bold;
@@ -161,34 +161,6 @@ section {
 .client-section .problem img {
   max-width: 500px;
   border-radius: 5px;
-}
-
-.comparison-section .comparison-card {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  padding: 15px;
-  transition: transform 0.3s;
-}
-
-.comparison-section .comparison-card img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.comparison-section .comparison-card:hover {
-  transform: scale(1.05);
-}
-
-.comparison-section .comparison-card h5 {
-  font-size: 1.8rem;
-  margin-top: 15px;
-  color: var(--main-color);
-}
-
-.comparison-section .comparison-card p {
-  font-size: 1.5rem;
-  color: #000;
-  margin-top: 10px;
 }
 
 .reason-section {
@@ -229,19 +201,362 @@ section {
   color: #333;
 }
 
+/* Comparison */
+.comparison-section {
+  padding: 50px 0;
+}
 
+.comparison-section h2 {
+  font-size: 40px;
+}
+
+.card-port {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+  margin: 10px;
+}
+
+.card-port:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  width: 100%;
+  min-height: 320px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.card-rating {
+  font-size: 14px;
+  color: #f39c12;
+}
+
+.card-rating .rating {
+  font-weight: bold;
+}
+
+.card-footer {
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.card-footer .designer-logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-footer .designer-name {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+
+/* Portfolio */
+.portfolio-section {
+  padding: 50px 0;
+}
+
+.portfolio-section h2 {
+  font-size: 40px;
+}
+
+.card {
+  width: 100%; 
+  max-width: 270px;
+  margin: auto;
+}
+
+.card-header {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px;
+  gap: 20px; 
+  align-items: center;
+  justify-content: center; 
+  background-color: #E7EDF8;
+}
+
+.main-image {
+  flex-shrink: 0; 
+  max-width: 150px;
+}
+
+.main-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.thumbnail-images {
+  flex-direction: row;
+  gap: 5px;
+  max-width: unset;
+}
+
+.thumbnail-images img {
+  width: 30px;
+  height: 30px;
+}
+
+.top-thumbnail img,
+.bottom-thumbnail img {
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.card-content {
+  text-align: center;
+  padding: 10px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.card-content p {
+  font-size: 15px;
+  color: #666;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.portfolio-section .card:hover {
+  transform: scale(1.05);
+}
 
 .client-logos img {
   max-width: 120px;
   margin: 10px;
 }
 
-.comparison-card img {
+.portfolio-card img {
   width: 100%;
   border-radius: 5px;
 }
 
+.testimonial-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.testimonial-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: var(--main-color);
+}
+
+.testimonial-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.testimonial-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.arrow-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--main-color);
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.testimonial-content {
+  text-align: left;
+  width: 100%;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid var(--main-color);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.username {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.rating {
+  color: #FFD700;
+  font-size: 14px;
+}
+
+.time {
+  font-size: 14px;
+  color: #888;
+  margin-left: auto;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.email-section {
+  background-color: #800000;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.email-section .email-prompt {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.email-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.email-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #800000;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.no-spam {
+  font-size: 14px;
+  font-style: italic;
+}
+
 .footer {
-  background-color: #f8f9fa;
-  padding: 30px 0;
+  background-color: #fff;
+  padding: 40px 20px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #800000;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  color: #800000;
+}
+
+.footer-note {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #888;
+}
+
+.footer-note a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-note a:hover {
+  color: #800000;
 }
